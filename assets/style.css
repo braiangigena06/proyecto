@@ -1,0 +1,442 @@
+:root{
+    --primary: #274156;
+    --secondary: #1C6E8C;
+    --terciary: #605856;
+    --text: #FBFCFF;
+    --other: #D0CCD0;
+    --selection: rgb(230, 48, 48);
+    --button: rgb(30, 27, 27);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2%;
+    background-color: var(--terciary);
+    height: 6em;
+}
+
+.container-logo{
+    display: flex;
+    gap: 30px;
+    height: 100%;
+}
+
+.container-logo img{
+    height: 100%;
+}
+
+.container-socio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 10px;
+}
+
+.container-socio p{
+    font-size: x-large;
+    color: var(--other);
+}
+
+.container-socio label{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container-socio label span{
+    width: 50%;
+    border-radius: 15px;
+    padding: 1% 0;
+    background-color: var(--button);
+    color: var(--text);
+    display: block;
+}
+
+.container-socio label span:hover{
+    background-color: var(--selection);
+}
+
+#toggle-club{
+    display: none;
+}
+
+#toggle-club:checked ~ .overlay{
+    display: flex;
+}
+
+.overlay{
+    display: none;
+}
+
+/* Register */
+.register{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.register_container{
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vh;
+    width: 50%;
+    gap: 2vh;
+    border: 5px solid black;
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+}
+
+.register_container p{
+    font-size: xx-large;
+    color: gold;
+    font-family: fantasy;
+}
+
+.register img{
+    height: 100px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario input{
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.register-button{
+    margin: 5% 0;
+    background-color: var(--button);
+    color: var(--text);
+}
+
+.register-button:hover{
+    background-color: var(--selection);
+}
+
+.blurriado{
+    position: absolute;
+    top: 95px;
+    left: 0;
+    height: 280vh;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: block;
+}
+/*navbar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.navbar ul li{
+    padding: 1%;
+    background-color: var(--primary);
+    color: var(--other);
+    width: 100%;
+    text-align: center;
+}
+
+.navbar ul li a{
+    color: var(--other);
+}
+
+.navbar ul li:hover{
+    background-color: var(--secondary);
+    font-size: large;
+}
+/*Section cups*/
+
+.cups{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cups_container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+}
+
+.copas{
+    width: 40%;
+    text-align: center;
+    height: 50vh;
+    border: var(--terciary) 5px solid;
+}
+
+
+/*Champions cup*/
+.champion{
+    background-image:url(./champions-final.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 0;
+}
+
+.facup{
+    background-image: url(./facup-winners.jpg);
+}
+
+.premier{
+    background-image: url(./premier-final.webp);
+}
+
+.champions-logo{
+    width: 30%;
+    height: 37%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/*Resultado champion*/
+
+.resultado_champions{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 0;
+    background-color: rgba(39, 34, 34, 0.8);
+}
+
+.resultado_champions-city{
+    width: 30%;
+}
+
+.resultado_champions img{
+    width: 40%;
+    height: 50%;
+}
+
+.resultado_champions-resultado{
+    width: 20%;
+}
+
+.resultado_champions-inter{
+    width: 30%;
+}
+/*Section Jugadores */
+
+.estrellas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3% 0;
+}
+
+.estrellas p{
+    font-size:xx-large;
+    text-shadow: red 0 -2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.jugadores{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 3vh;
+}
+
+.jugadores_container{
+    width: 90%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jugador{
+    width: 30%;
+    box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+}
+
+.jugador img{
+    width: 100%;
+    height: 100%;
+}
+
+.jugador-datos{
+    z-index: 1;
+    position: relative;
+    background-color: var(--other);
+    text-align: center;
+    border: var(--terciary) solid 5px;
+    border-top: none;
+    display: none;
+}
+
+.jugador img:hover + .jugador-datos{
+    display: block;
+}
+
+.jugador-datos ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 1vh 0;
+}
+
+.jugador-datos li{
+    font-size: large;
+}
+
+/*SECTION ESTADIO*/
+.section_estadio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estadio{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    border: var(--primary) solid 5px;
+    box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 2px 13px 4px rgba(0,0,0,0.49);
+}
+
+.estadio_container{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--other);
+}
+
+.estadio-logo{
+    width: 10%;
+    padding: 1% 0;
+}
+
+.estadio-titulo{
+    font-size: xx-large;
+}
+
+.estadio-descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+    border: black solid 5px;
+}
+
+.estadio-img{
+    border: black solid 5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.estadio-img img{
+    width: 75%;
+}
+
+.estadio-iframe{
+    width: 100%;
+    display: flex;
+}
+
+.estadio-div{
+    width: 50%;
+    height: 40vh;
+}
+
+.estadio iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 15rem;
+    margin-top: 5%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+}
+
+.footer_conteiner{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_conteiner img{
+    width: 10%;
+}
+
+.footer_conteiner ul{
+    display: flex;
+    width: 50%;
+    text-align: center;
+}
+
+.footer_conteiner li{
+    display: contents;
+}
+
+.footer_conteiner li a img{
+    width: 20%;
+}
+
+.footer_conteiner p a{
+    color: black;
+    font-size: larger;
+}
