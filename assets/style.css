@@ -75,11 +75,19 @@
     display: none;
 }
 
+#socio-club{
+    display: none;
+}
+
+#socio-club:checked ~ .overlay-socio{
+    display: flex;
+}
+
 #toggle-club:checked ~ .overlay{
     display: flex;
 }
 
-.overlay{
+.overlay, .overlay-socio{
     display: none;
 }
 
@@ -180,6 +188,15 @@
     background-color: var(--secondary);
     font-size: large;
 }
+
+#menu-hamburguesa{
+    display: none;
+}
+
+.navbar i{
+    display: none;
+}
+
 /*Section cups*/
 
 .cups{
@@ -439,4 +456,15 @@ footer{
 .footer_conteiner p a{
     color: black;
     font-size: larger;
+}
+
+.arrow-up{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 3;
+}
+
+.arrow-up i{
+    font-size: 60px;
 }

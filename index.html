@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/style-2.css">
     <link rel="stylesheet" href="./assets/style-responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Manchester City</title>
 </head>
 <body>
@@ -23,14 +23,12 @@
                 </div>
             </div>
             <div class="container-socio">
-                <p>Unite al Club</p>
                 <label for="toggle-club">
-                    <span>Socio</span>
+                    <span>Registrate</span>
                 </label>
                 <input type="checkbox" id="toggle-club">
                 <div class="overlay">
                     <div class="blurriado">
-
                     </div>
                     <!-- Register -->
                     <section class="register">
@@ -45,8 +43,32 @@
                                     <input type="text" name="lastName" id="lastName">
                                     <label for="email"> Email: </label>
                                     <input type="email" name="email" id="email">
-                                    <label for="phone">Celular: </label>
-                                    <input type="tel" name="phone" id="phone">
+                                    <label for="password">Password: </label>
+                                    <input type="password" name="password" id="password">
+                                    <input class="register-button" type="submit" value="Enviar">
+                                </form>
+                            </div>
+                        </div>    
+                    </section>
+                </div>
+                <label for="socio-club">
+                    <span>Soy Socio</span>
+                </label>
+                <input type="checkbox" id="socio-club">
+                <div class="overlay-socio">
+                    <div class="blurriado">
+                    </div>
+                    <!-- Login -->
+                    <section class="register">
+                        <div class="register_container">
+                            <p>Ingresa a tu cuenta</p>
+                            <img src="./assets/logo-machester.svg" alt="Logo-register">
+                            <div>
+                                <form class="formulario">
+                                    <label for="email"> Email: </label>
+                                    <input type="email" name="email" id="email">
+                                    <label for="password">Password: </label>
+                                    <input type="password" name="password" id="password">
                                     <input class="register-button" type="submit" value="Enviar">
                                 </form>
                             </div>
@@ -56,6 +78,11 @@
             </div>
         </div>
         <nav class="navbar">
+            <label for="menu-hamburguesa">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu-hamburguesa">
+            
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#jugadores">Jugadores</a></li>
@@ -129,8 +156,8 @@
                 <div class="jugador-datos">
                     <ul>
                         <li>Julian</li>
-                        <li>Argentino</li>
-                        <li>9</li>
+                        <li>Argentina</li>
+                        <li>19</li>
                     </ul>
                 </div>
             </div>
@@ -138,8 +165,8 @@
                 <img src="./assets/jugador-haland.jfif" alt="Jugador-Haland">
                 <div class="jugador-datos">
                     <ul>
-                        <li>Julian</li>
-                        <li>Argentino</li>
+                        <li>Haland</li>
+                        <li>Noruega</li>
                         <li>9</li>
                     </ul>
                 </div>
@@ -148,9 +175,9 @@
                 <img src="./assets/jugador-debruyne.jfif" alt="Jugador-deBruyne">
                 <div class="jugador-datos">
                     <ul>
-                        <li>Julian</li>
-                        <li>Argentino</li>
-                        <li>9</li>
+                        <li>De Bruyne</li>
+                        <li>Belgica</li>
+                        <li>17</li>
                     </ul>
                 </div>
             </div>
@@ -160,9 +187,9 @@
                 <img src="./assets/jugador-foden.jfif" alt="Jugador-Julian">
                 <div class="jugador-datos">
                     <ul>
-                        <li>Julian</li>
-                        <li>Argentino</li>
-                        <li>9</li>
+                        <li>Foden</li>
+                        <li>Inglaterra</li>
+                        <li>17</li>
                     </ul>
                 </div>
             </div>
@@ -170,9 +197,9 @@
                 <img src="./assets/jugador-grealish.jfif" alt="Jugador-Haland">
                 <div class="jugador-datos">
                     <ul>
-                        <li>Julian</li>
-                        <li>Argentino</li>
-                        <li>9</li>
+                        <li>Grealish</li>
+                        <li>inglaterra</li>
+                        <li>10</li>
                     </ul>
                 </div>
             </div>
@@ -180,9 +207,9 @@
                 <img src="./assets/jugador-gundogan.jfif" alt="Jugador-deBruyne">
                 <div class="jugador-datos">
                     <ul>
-                        <li>Julian</li>
-                        <li>Argentino</li>
-                        <li>9</li>
+                        <li>Gundogan</li>
+                        <li>Inglaterra</li>
+                        <li>30</li>
                     </ul>
                 </div>
             </div>
@@ -227,5 +254,11 @@
             <p><a href="#inicio">Vuelve al inicio</a></p>
         </div>
     </footer>
+    <div class="arrow-up">
+        <a href="#inicio">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+        </a>
+        
+    </div>
 </body>
 </html>

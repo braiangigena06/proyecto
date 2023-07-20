@@ -29,7 +29,7 @@
     }
 
     .jugadores{
-        flex-direction: row;
+        gap: 1%;
         width: 90%;
         margin-left: 5%;
     }
@@ -38,11 +38,13 @@
         flex-direction: column;
         align-items: center;
         gap: 5%;
+        height: auto;
     }
 
     .jugador{
         width: 70%;
         height: 15vh;
+        margin-bottom: 3%;
     }
     
     .estadio_container{
@@ -68,6 +70,35 @@
 
     .footer_conteiner li a img{
         width: 40%;
+    }
+
+    .navbar i{
+        display: block;
+        font-size: 30px;
+    }
+
+    .navbar label{
+        background-color: var(--primary);
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    #menu-hamburguesa:checked ~ ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar ul li{
+        border-top: solid;
     }
 
 }
